@@ -53,6 +53,7 @@ public class PipeChannel {
                     try {
                         output.write(Thread.currentThread().getName().getBytes());
                         System.out.println("Process " + Thread.currentThread().getName() + " is Executing");
+                        Thread.sleep(1000);
                     } catch (IOException e) {
                     }
                 }
